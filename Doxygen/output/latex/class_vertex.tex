@@ -1,0 +1,140 @@
+\doxysection{Vertex Class Reference}
+\hypertarget{class_vertex}{}\label{class_vertex}\index{Vertex@{Vertex}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vertex_af2d4681f3cb6deeeed264950bf2d4a9e}\label{class_vertex_af2d4681f3cb6deeeed264950bf2d4a9e} 
+{\bfseries Vertex} (int id)
+\item 
+\Hypertarget{class_vertex_ab57ead08f49e64495b52549f4f3e77c5}\label{class_vertex_ab57ead08f49e64495b52549f4f3e77c5} 
+{\bfseries Vertex} (int id, std\+::string name, std\+::string district, std\+::string municipality, std\+::string township, std\+::string line)
+\item 
+\Hypertarget{class_vertex_ad4ccd48170a1530ec1db5eb306357a74}\label{class_vertex_ad4ccd48170a1530ec1db5eb306357a74} 
+bool {\bfseries operator$<$} (\mbox{\hyperlink{class_vertex}{Vertex}} \&vertex) const
+\item 
+\Hypertarget{class_vertex_a75b6b4a4afc26affea59fdae48aa30b1}\label{class_vertex_a75b6b4a4afc26affea59fdae48aa30b1} 
+int {\bfseries get\+Id} () const
+\item 
+\Hypertarget{class_vertex_a9d1db1789299fd14088a7f4bc3c8e194}\label{class_vertex_a9d1db1789299fd14088a7f4bc3c8e194} 
+std\+::string {\bfseries get\+Name} () const
+\item 
+\Hypertarget{class_vertex_a45cb9578e36b1a584620c191ac3dd003}\label{class_vertex_a45cb9578e36b1a584620c191ac3dd003} 
+std\+::string {\bfseries get\+District} () const
+\item 
+\Hypertarget{class_vertex_a72cabbe71318b26964e0f6d3cf0fb96b}\label{class_vertex_a72cabbe71318b26964e0f6d3cf0fb96b} 
+std\+::string {\bfseries get\+Municipality} () const
+\item 
+\Hypertarget{class_vertex_a9858f2aa388d2bfb49d9df8f4504b5a0}\label{class_vertex_a9858f2aa388d2bfb49d9df8f4504b5a0} 
+std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries get\+Adj} () const
+\item 
+\Hypertarget{class_vertex_aa4bd82105b85ee53a917391f4811cd8a}\label{class_vertex_aa4bd82105b85ee53a917391f4811cd8a} 
+bool {\bfseries is\+Visited} () const
+\item 
+\Hypertarget{class_vertex_a126e306f0534b99cd97aa864fdb243d4}\label{class_vertex_a126e306f0534b99cd97aa864fdb243d4} 
+bool {\bfseries is\+Processing} () const
+\item 
+\Hypertarget{class_vertex_ad7348af9376d4b9ada5ceeca3bd1b2b7}\label{class_vertex_ad7348af9376d4b9ada5ceeca3bd1b2b7} 
+unsigned int {\bfseries get\+Indegree} () const
+\item 
+\Hypertarget{class_vertex_aa36ca926de23a6e7283be42e2930957c}\label{class_vertex_aa36ca926de23a6e7283be42e2930957c} 
+double {\bfseries get\+Dist} () const
+\item 
+\Hypertarget{class_vertex_a6e120e57da6af94892fae44e05868794}\label{class_vertex_a6e120e57da6af94892fae44e05868794} 
+\mbox{\hyperlink{class_edge}{Edge}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Path} () const
+\item 
+\Hypertarget{class_vertex_a84b20dae22321e5a729606885357b015}\label{class_vertex_a84b20dae22321e5a729606885357b015} 
+std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries get\+Incoming} () const
+\item 
+\Hypertarget{class_vertex_a5fbffd695323f52f0b93276176781c7d}\label{class_vertex_a5fbffd695323f52f0b93276176781c7d} 
+void {\bfseries set\+Id} (int info)
+\item 
+\Hypertarget{class_vertex_a15eeabbbb6d517af746ae137c6d5b595}\label{class_vertex_a15eeabbbb6d517af746ae137c6d5b595} 
+void {\bfseries set\+Visited} (bool visited)
+\item 
+\Hypertarget{class_vertex_a1c93b166281b30db2edef03791748ace}\label{class_vertex_a1c93b166281b30db2edef03791748ace} 
+void {\bfseries set\+Processsing} (bool processing)
+\item 
+\Hypertarget{class_vertex_aeb605d2ba9296a5e40496a9e37557d03}\label{class_vertex_aeb605d2ba9296a5e40496a9e37557d03} 
+void {\bfseries set\+Indegree} (unsigned int indegree)
+\item 
+\Hypertarget{class_vertex_a6939bef79bfe5fe5bf77d9fd1bd70085}\label{class_vertex_a6939bef79bfe5fe5bf77d9fd1bd70085} 
+void {\bfseries set\+Dist} (double dist)
+\item 
+\Hypertarget{class_vertex_abe4bc30005eec65e775d0cd51f456460}\label{class_vertex_abe4bc30005eec65e775d0cd51f456460} 
+void {\bfseries set\+Path} (\mbox{\hyperlink{class_edge}{Edge}} \texorpdfstring{$\ast$}{*}path)
+\item 
+\Hypertarget{class_vertex_a6c38817196656fcc394aae867ee62773}\label{class_vertex_a6c38817196656fcc394aae867ee62773} 
+\mbox{\hyperlink{class_edge}{Edge}} \texorpdfstring{$\ast$}{*} {\bfseries add\+Edge} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}dest, double w)
+\item 
+\Hypertarget{class_vertex_ab37f0c066c87cc03cff511abd96d3d69}\label{class_vertex_ab37f0c066c87cc03cff511abd96d3d69} 
+\mbox{\hyperlink{class_edge}{Edge}} \texorpdfstring{$\ast$}{*} {\bfseries add\+Edge} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}d, std\+::string s, double w)
+\item 
+\Hypertarget{class_vertex_a10c6827225205dc4ad070914ebfa26e7}\label{class_vertex_a10c6827225205dc4ad070914ebfa26e7} 
+bool {\bfseries remove\+Edge} (int dest\+ID)
+\item 
+\Hypertarget{class_vertex_afcde6d707aff7627df7adde8d8b74a89}\label{class_vertex_afcde6d707aff7627df7adde8d8b74a89} 
+void {\bfseries remove\+Outgoing\+Edges} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vertex_ac2a80daa5a6a208173f55d4d161334f1}\label{class_vertex_ac2a80daa5a6a208173f55d4d161334f1} 
+void {\bfseries delete\+Edge} (\mbox{\hyperlink{class_edge}{Edge}} \texorpdfstring{$\ast$}{*}edge)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vertex_a2e69697726190f50c7fc040fb1ddac7a}\label{class_vertex_a2e69697726190f50c7fc040fb1ddac7a} 
+int {\bfseries id}
+\item 
+\Hypertarget{class_vertex_a14e4b85b8ddd1204e3e79daea7eff8d8}\label{class_vertex_a14e4b85b8ddd1204e3e79daea7eff8d8} 
+std\+::string {\bfseries name}
+\item 
+\Hypertarget{class_vertex_a0980881ced715a18987d067fdd64d172}\label{class_vertex_a0980881ced715a18987d067fdd64d172} 
+std\+::string {\bfseries district}
+\item 
+\Hypertarget{class_vertex_a2e791a46d0f4bc179bac1fcda4a68a05}\label{class_vertex_a2e791a46d0f4bc179bac1fcda4a68a05} 
+std\+::string {\bfseries municipality}
+\item 
+\Hypertarget{class_vertex_aee67fa77334af67fb757c426dc2ab070}\label{class_vertex_aee67fa77334af67fb757c426dc2ab070} 
+std\+::string {\bfseries township}
+\item 
+\Hypertarget{class_vertex_aa7c5fa8b343f194a81330b1aab82acb9}\label{class_vertex_aa7c5fa8b343f194a81330b1aab82acb9} 
+std\+::string {\bfseries line}
+\item 
+\Hypertarget{class_vertex_a0be7a8d322f99d4812261af91c3e2178}\label{class_vertex_a0be7a8d322f99d4812261af91c3e2178} 
+std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries adj}
+\item 
+\Hypertarget{class_vertex_aaef9f7de91b4b8f1752d391a1aae9c2e}\label{class_vertex_aaef9f7de91b4b8f1752d391a1aae9c2e} 
+bool {\bfseries visited} = false
+\item 
+\Hypertarget{class_vertex_a305dc8fcad6e4c7ef2491409ca7ddaa4}\label{class_vertex_a305dc8fcad6e4c7ef2491409ca7ddaa4} 
+bool {\bfseries processing} = false
+\item 
+\Hypertarget{class_vertex_a94ae99aae9b1a426feda5ecda70c598b}\label{class_vertex_a94ae99aae9b1a426feda5ecda70c598b} 
+unsigned int {\bfseries indegree}
+\item 
+\Hypertarget{class_vertex_a11d98611f5101fe7f46785d8b9c53f44}\label{class_vertex_a11d98611f5101fe7f46785d8b9c53f44} 
+double {\bfseries dist} = 0
+\item 
+\Hypertarget{class_vertex_a4e83821f961f6eb63ad210260ba0e1e2}\label{class_vertex_a4e83821f961f6eb63ad210260ba0e1e2} 
+\mbox{\hyperlink{class_edge}{Edge}} \texorpdfstring{$\ast$}{*} {\bfseries path} = nullptr
+\item 
+\Hypertarget{class_vertex_a2d41654d7aee77d99edacca6a923f4ee}\label{class_vertex_a2d41654d7aee77d99edacca6a923f4ee} 
+std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries incoming}
+\item 
+\Hypertarget{class_vertex_a78ba760e405ba9f66129b3870065b48f}\label{class_vertex_a78ba760e405ba9f66129b3870065b48f} 
+int {\bfseries queue\+Index} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vertex_a6e8dd99e4d0d0f5083b2fb64743a8953}\label{class_vertex_a6e8dd99e4d0d0f5083b2fb64743a8953} 
+class {\bfseries Mutable\+Priority\+Queue$<$ Vertex $>$}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/luizqueiroz/\+Desktop/\+Projects/\+DA-\/\+Railway\+Network/src/data\+\_\+structures/Vertex\+Edge.\+h\item 
+/\+Users/luizqueiroz/\+Desktop/\+Projects/\+DA-\/\+Railway\+Network/src/data\+\_\+structures/Vertex\+Edge.\+cpp\end{DoxyCompactItemize}

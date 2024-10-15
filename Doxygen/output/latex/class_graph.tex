@@ -1,0 +1,80 @@
+\doxysection{Graph Class Reference}
+\hypertarget{class_graph}{}\label{class_graph}\index{Graph@{Graph}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_graph_a089f7fc73ea9976295d387846ad36c69}\label{class_graph_a089f7fc73ea9976295d387846ad36c69} 
+\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} {\bfseries find\+Vertex} (const int \&id) const
+\item 
+\Hypertarget{class_graph_a4898e2b31817c39f080eb88e5586c4ec}\label{class_graph_a4898e2b31817c39f080eb88e5586c4ec} 
+\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} {\bfseries find\+Vertex} (std\+::string name) const
+\item 
+\Hypertarget{class_graph_ad354c018724ef3f137a0b8554089105e}\label{class_graph_ad354c018724ef3f137a0b8554089105e} 
+bool {\bfseries add\+Vertex} (const int \&id)
+\item 
+\Hypertarget{class_graph_ab3624466053b3ff3cc69a07d2c0b421d}\label{class_graph_ab3624466053b3ff3cc69a07d2c0b421d} 
+bool {\bfseries add\+Vertex} (const int \&id, std\+::string name, std\+::string district, std\+::string municipality, std\+::string township, std\+::string rail\+Line)
+\item 
+\Hypertarget{class_graph_a697561b2a2c1b25147b1750b250c1fdf}\label{class_graph_a697561b2a2c1b25147b1750b250c1fdf} 
+bool {\bfseries remove\+Vertex} (const int \&id)
+\item 
+\Hypertarget{class_graph_a516f4487d70f4b15e413447afa8c2310}\label{class_graph_a516f4487d70f4b15e413447afa8c2310} 
+bool {\bfseries add\+Edge} (const int \&sourc, const int \&dest, double w)
+\item 
+\Hypertarget{class_graph_a04f2764a9bd0dac14eaddce62431ba95}\label{class_graph_a04f2764a9bd0dac14eaddce62431ba95} 
+bool {\bfseries add\+Bidirectional\+Edge} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}v1, \mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}v2, std\+::string service, double w)
+\item 
+\Hypertarget{class_graph_a0e1c5b1007a5b01649dd3a960cf4cdb5}\label{class_graph_a0e1c5b1007a5b01649dd3a960cf4cdb5} 
+int {\bfseries edmonds\+Karp} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}s, \mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}t)
+\item 
+\Hypertarget{class_graph_a7c97caa812b90d4d1cbf5800ed8afc42}\label{class_graph_a7c97caa812b90d4d1cbf5800ed8afc42} 
+void {\bfseries dijkstra} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}source)
+\item 
+\Hypertarget{class_graph_ab1c053c95f4aaaf1fca7d37e307ad76a}\label{class_graph_ab1c053c95f4aaaf1fca7d37e307ad76a} 
+std\+::pair$<$ int, int $>$ {\bfseries edmonds\+Dijkstra} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}source, \mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}target)
+\item 
+\Hypertarget{class_graph_abb5e0517e2979c54eebdafc2a9875e8f}\label{class_graph_abb5e0517e2979c54eebdafc2a9875e8f} 
+int {\bfseries get\+Num\+Vertex} () const
+\item 
+\Hypertarget{class_graph_a619ac583094079134074658e29463c0e}\label{class_graph_a619ac583094079134074658e29463c0e} 
+std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries get\+Vertex\+Set} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_graph_af90483b6ad02aaea613c4fd0ca7a4341}\label{class_graph_af90483b6ad02aaea613c4fd0ca7a4341} 
+void {\bfseries test\+And\+Visit} (std\+::queue$<$ \mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} $>$ \&q, \mbox{\hyperlink{class_edge}{Edge}} \texorpdfstring{$\ast$}{*}e, \mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}w, double residual)
+\item 
+\Hypertarget{class_graph_a3b5af5d9fba5bac37ed469fa3d8e5f1b}\label{class_graph_a3b5af5d9fba5bac37ed469fa3d8e5f1b} 
+bool {\bfseries find\+Augmenting\+Path} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}s, \mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}t)
+\item 
+\Hypertarget{class_graph_aa83c8bcf6feb001881f09c5b52f6576f}\label{class_graph_aa83c8bcf6feb001881f09c5b52f6576f} 
+double {\bfseries find\+Min\+Residual\+Along\+Path} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}s, \mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}t)
+\item 
+\Hypertarget{class_graph_a1e4cb3533098748b7e67bb8c941a59b3}\label{class_graph_a1e4cb3533098748b7e67bb8c941a59b3} 
+void {\bfseries augment\+Flow\+Along\+Path} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}s, \mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}t, double f)
+\item 
+\Hypertarget{class_graph_a25cd7b1223ca244ebd5df5908ac39de6}\label{class_graph_a25cd7b1223ca244ebd5df5908ac39de6} 
+void {\bfseries relax} (\mbox{\hyperlink{class_edge}{Edge}} \texorpdfstring{$\ast$}{*}e)
+\item 
+\Hypertarget{class_graph_a7dfcef08a9286cf144902cd7e56940ee}\label{class_graph_a7dfcef08a9286cf144902cd7e56940ee} 
+int {\bfseries find\+Vertex\+Idx} (const int \&id) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_graph_aa9b0a6d8ad43c5eabaca5a7140bcc8b6}\label{class_graph_aa9b0a6d8ad43c5eabaca5a7140bcc8b6} 
+std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries vertex\+Set}
+\item 
+\Hypertarget{class_graph_a9e61864da69191c1896a25a708d1a02d}\label{class_graph_a9e61864da69191c1896a25a708d1a02d} 
+double \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries dist\+Matrix} = nullptr
+\item 
+\Hypertarget{class_graph_a3ae09699c3616af3ebfcb1eb045f2b62}\label{class_graph_a3ae09699c3616af3ebfcb1eb045f2b62} 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries path\+Matrix} = nullptr
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/luizqueiroz/\+Desktop/\+Projects/\+DA-\/\+Railway\+Network/src/data\+\_\+structures/Graph.\+h\item 
+/\+Users/luizqueiroz/\+Desktop/\+Projects/\+DA-\/\+Railway\+Network/src/data\+\_\+structures/Graph.\+cpp\end{DoxyCompactItemize}
